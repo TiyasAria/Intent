@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Intent</string>
+    <string name="txt_move_activity">Move Activity</string>
+    <string name="txt_move_with_data">move with data</string>
+    <string name="txt_text_data">Text data</string>
+    <string name="txt_move_with_object">Move with Object</string>
+    <string name="txt_call">Call</string>
+    <string name="txt_quiz">Quiz</string>
+    <string name="txt_result">result</string>
+    <string name="txt_question">Pilih MAKANAN yang kamu Suka!</string>
+    <string name="txt_ayam">Ayam</string>
+    <string name="txt_sapi">Sapi</string>
+    <string name="txt_sayuran">Sayuran</string>
+    <string name="txt_buah_buahan">Buah-Buahan</string>
+    <string name="txt_submit">Submit</string>
+</resources>

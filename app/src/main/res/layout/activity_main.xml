@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btn_to_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:textAllCaps="false"
+        android:text="@string/txt_move_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:textAllCaps="false"
+        android:text="@string/txt_move_with_data"
+        app:layout_constraintEnd_toEndOf="@+id/btn_to_activity"
+        app:layout_constraintStart_toStartOf="@+id/btn_to_activity"
+        app:layout_constraintTop_toBottomOf="@+id/btn_to_activity" />
+
+    <Button
+        android:id="@+id/btn_object"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:textAllCaps="false"
+        android:text="@string/txt_move_with_object"
+        app:layout_constraintEnd_toEndOf="@+id/btn_data"
+        app:layout_constraintStart_toStartOf="@+id/btn_data"
+        app:layout_constraintTop_toBottomOf="@+id/btn_data" />
+
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:text="@string/txt_call"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@id/btn_object"
+        app:layout_constraintStart_toStartOf="@id/btn_object"
+        app:layout_constraintTop_toBottomOf="@+id/btn_object" />
+
+    <Button
+        android:id="@+id/btn_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:text="@string/txt_quiz"
+        app:layout_constraintEnd_toEndOf="@+id/btn_call"
+        app:layout_constraintStart_toStartOf="@+id/btn_call"
+        app:layout_constraintTop_toBottomOf="@+id/btn_call"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_result"
+        android:layout_marginTop="@dimen/_16dp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_quiz"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintTop_toBottomOf="@id/btn_quiz"
+        app:layout_constraintStart_toStartOf="@+id/btn_quiz" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
